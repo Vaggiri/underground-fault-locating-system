@@ -122,7 +122,7 @@ To send emails through Gmail SMTP:
 You can include a dashboard in the alert email:
 
 ```
-https://681b6e62bf287a0939e648d5--idyllic-profiterole-a8019c.netlify.app/
+https://fault-locator.netlify.app/
 ```
 
 > You can build dashboards with Netlify, Firebase, or ThingSpeak.
