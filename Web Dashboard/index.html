@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Fault Monitoring Dashboard</title>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div id="login-container" class="login-container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="dashboard-container" style="display: none;">
+    <h1>Fault Monitoring Dashboard</h1>
+
+    <div class="wire-container">
+      <div class="wire-card green" id="red-wire">Loading Green Wire...</div>
+      <div class="wire-card yellow" id="yellow-wire">Loading Yellow Wire...</div>
+      <div class="wire-card orange" id="blue-wire">Loading Orange Wire...</div>
+    </div>
+
+    <div id="sparkle-container"></div>
+
+    <div class="fault-summary" id="fault-summary"></div>
+
+    <div class="spreadsheet-section">
+      <h2>📊 Recent Fault Logs</h2>
+      <iframe 
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSs9o9smmCYO2B-zyMGKqtB-4wfFRaE0i2oZd2SqxYuK7LmAnicUKVmaKQipzgdhDP0AD3OIhCCA2W1/pubhtml?widget=true&amp;headers=false" 
+        allowfullscreen>
+      </iframe>
+      <p style="text-align:center; margin-top: 10px;">
+        🔍 <a href="https://docs.google.com/spreadsheets/d/1vMG3esuZHnjuejcijrxr4hkGw5Fvk3DMIAy0NDzmtXk/edit?usp=sharing" target="_blank">
+          View Full Data in Google Sheets
+        </a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
